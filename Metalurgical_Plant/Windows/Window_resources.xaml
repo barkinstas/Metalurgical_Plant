@@ -1,0 +1,22 @@
+﻿<Window x:Class="Metalurgical_Plant.Windows.Window_resources"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Metalurgical_Plant.Windows"
+        mc:Ignorable="d"
+        Loaded="Window2_Loaded"
+        Title="Window_resources" Height="450" Width="800">
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" Height="210" Margin="165,49,0,0" VerticalAlignment="Top" Width="475" AutoGenerateColumns="False" x:Name="resourcesGrid">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id}"/>
+                <DataGridTextColumn Header="КР-70" Binding="{Binding kr70}"/>
+                <DataGridTextColumn Header="КР-80" Binding="{Binding kr80}"/>
+                <DataGridTextColumn Header="КР-100" Binding="{Binding kr100}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Удалить" HorizontalAlignment="Left" Height="55" Margin="220,309,0,0" VerticalAlignment="Top" Width="140" Click="Button_delete"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="55" Margin="430,309,0,0" VerticalAlignment="Top" Width="145" Click="Button_add" />
+    </Grid>
+</Window>

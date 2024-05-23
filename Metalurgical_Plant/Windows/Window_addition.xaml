@@ -1,0 +1,19 @@
+﻿<Window x:Class="Metalurgical_Plant.Windows.Window_addition"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Metalurgical_Plant.Windows"
+        mc:Ignorable="d"
+        Title="Window_addition" Height="300" Width="650">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Margin="40,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="25" Name="name"/>
+        <TextBox HorizontalAlignment="Left" Margin="270,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="25" Name="department"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="460,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Name="position"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="42,39,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label Content="Отдел" HorizontalAlignment="Left" Margin="272,39,0,0" VerticalAlignment="Top" Width="58"/>
+        <Label Content="Должность" HorizontalAlignment="Left" Margin="460,38,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="35" Margin="470,144,0,0" VerticalAlignment="Top" Width="110" Click="Button_add"/>
+
+    </Grid>
+</Window>
